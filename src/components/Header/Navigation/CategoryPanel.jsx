@@ -1,45 +1,54 @@
-import React, {useState} from 'react';
-import Box from '@mui/material/Box';
-import Drawer from '@mui/material/Drawer';
-import Button from '@mui/material/Button';
+import React from "react";
+import Box from "@mui/material/Box";
+import Drawer from "@mui/material/Drawer";
 import { IoMdClose } from "react-icons/io";
-import { FaRegSquarePlus } from "react-icons/fa6";
 
+import CategoryItem from "./CategoryItem";
+import categories from "./categories";
 
-const CategoryPanel = (props) => {
-
-  const toggleDrawer = (newOpen) => () => {
-    props.setIsOpenCatPanel(newOpen)
+const CategoryPanel = ({ isOpenCatPanel, setIsOpenCatPanel }) => {
+  const toggleDrawer = (open) => () => {
+    setIsOpenCatPanel(open);
   };
 
-const DrawerList = (
-    <Box sx={{ width: 250 }} role="presentation">
-
-      {/* Header */}
-    <h3 className="p-3 text-[16px] font-[500] flex items-center justify-between">Shop By Categories <IoMdClose onClick={toggleDrawer(false)} className="cursor-pointer text-[20px]"/></h3>
-    {/* Categories List */}
-    <div className='scroll-m-50 overflow-y-auto h-[400px]'>
-      <ul className="w-full">
-        <li className="list-none flex items-center relative">
-          <Link to="/">
-          <Button className="w-full !text-left !justify-start !px-3 !text-[rgba(0,0,0,0.8)]">Fashion</Button>
-          </Link>
-          <FaRegSquarePlus className="absolute top-[10px] right-[15px]" />
-        </li>
-      </ul>
-    </div>
-
-  </Box>
-  );
-
-
   return (
-    <>
-      <Drawer open={props.isOpenCatPanel} onClose={toggleDrawer(false)}>
-        {DrawerList}
-      </Drawer>
-    </>
-  )
+    <Drawer
+      open={isOpenCatPanel}
+      onClose={toggleDrawer(false)}
+    >
+      <Box
+        sx={{ width: 300 }}
+        role="presentation"
+        className="categoryPanel"
+      >
+        {/* Header */}
+        <div className="flex items-center justify-between px-4 py-3 border-b">
+          <h3 className="text-[17px] font-semibold">
+            Shop By Categories
+          </h3>
+
+          <IoMdClose
+            className="text-[22px] cursor-pointer"
+            onClick={toggleDrawer(false)}
+          />
+        </div>
+
+        {/* Categories */}
+        <div className="scroll">
+          <ul className="w-full py-2">
+
+            {categories.map((category) => (
+              <CategoryItem
+                key={category.id}
+                category={category}
+              />
+            ))}
+
+          </ul>
+        </div>
+      </Box>
+    </Drawer>
+  );
 };
 
 export default CategoryPanel;

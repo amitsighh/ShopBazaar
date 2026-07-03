@@ -1,0 +1,123 @@
+.categoryPanel {
+    width: 300px;
+    height: 100vh;
+    background: #fff;
+}
+
+.categoryPanel .scroll {
+    height: calc(100vh - 60px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 8px 0;
+}
+
+/* Custom Scrollbar */
+
+.categoryPanel .scroll::-webkit-scrollbar {
+    width: 6px;
+}
+
+.categoryPanel .scroll::-webkit-scrollbar-thumb {
+    background: #d1d1d1;
+    border-radius: 20px;
+}
+
+.categoryPanel .scroll::-webkit-scrollbar-thumb:hover {
+    background: #999;
+}
+
+/* Main Category */
+
+.categoryPanel ul {
+    margin: 0;
+    padding: 0;
+}
+
+.categoryPanel ul li {
+    list-style: none;
+    position: relative;
+}
+
+.categoryPanel button {
+    width: 100%;
+    justify-content: flex-start !important;
+    text-align: left !important;
+    text-transform: capitalize !important;
+    color: #333 !important;
+    font-size: 15px !important;
+    font-weight: 500 !important;
+    border-radius: 8px !important;
+    transition: all .3s ease;
+}
+
+.categoryPanel button:hover {
+    background: #f5f5f5 !important;
+    color: #e53935 !important;
+}
+
+/* Expand Icons */
+
+.categoryPanel svg {
+    transition: .3s ease;
+}
+
+.categoryPanel svg:hover {
+    color: #e53935;
+    transform: scale(1.1);
+}
+
+/* Submenu */
+
+.submenu {
+    padding-left: 18px;
+    margin-top: 4px;
+    border-left: 2px solid #f1f1f1;
+}
+
+/* Inner Menu */
+
+.inner_submenu {
+    padding-left: 10px;
+    margin: 5px 0 8px;
+    border-left: 2px dashed #ececec;
+}
+
+.inner_submenu li {
+    padding: 7px 0;
+}
+
+.inner_submenu a {
+    text-decoration: none;
+    color: #444;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: .2px;
+    transition: all .3s ease;
+}
+
+.inner_submenu a:hover {
+    color: #e53935;
+    padding-left: 6px;
+}
+
+/* Divider */
+
+.categoryPanel li:not(:last-child) {
+    margin-bottom: 3px;
+}
+
+/* Header */
+
+.categoryPanel h3 {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .categoryPanel{
+        width:280px;
+    }
+}

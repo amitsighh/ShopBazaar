@@ -1,10 +1,12 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import Button from '@mui/material/Button';
 import { RiMenuFold2Line } from "react-icons/ri";
 import { FaAngleDown } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
 import { GoRocket } from "react-icons/go";
 import CategoryPanel from './CategoryPanel';
+
+import "../Navigation/style.css"
 
 const Navigation  = () => {
     const [isOpenCatPanel, setIsOpenCatPanel] = useState(false);
