@@ -117,10 +117,9 @@ const categories = [
     ],
   },
 
-  ,
 {
   id: 7,
-  name: "Grocery",
+  name: "Groceries",
   icon: "MdOutlineLocalGroceryStore",
   subcategories: [
     {
@@ -278,7 +277,25 @@ const categories = [
       items: ["Helmet", "Gloves", "Bike Cover"],
     },
   ],
-}
+},
+
+{
+  id: 16,
+  name: "Wellness",
+  icon: "GiWeightLiftingUp",
+  subcategories: [
+    {
+      id: 1,
+      name: "Nutrition",
+      items: ["Protein Powder", "MultiVitamins", "FishOil"],
+    },
+    {
+      id: 2,
+      name: "Fitness Equipment",
+      items: [" Yoga Mats", "Resistance Band", "Dumbells"],
+    },
+  ],
+},
 ];
 
 export default categories;
