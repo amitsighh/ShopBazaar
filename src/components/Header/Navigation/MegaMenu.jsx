@@ -2,6 +2,17 @@ import React from "react";
 import { Link } from "react-router-dom";
 import categories from "./categories";
 
+const menuImages = {
+  Fashion: "/images/fashion-banner.jpeg",
+  Electronics: "/images/electronics-banner.jpg",
+  Bags: "/images/bags-banner.jpg",
+  Footwear: "/images/footwear-banner.jpg",
+  Groceries: "/images/grocery-banner.jpg",
+  Beauty: "/images/beauty-banner.jpg",
+  Wellness: "/images/wellness-banner.jpg",
+  Jewellery: "/images/jewellery-banner.jpg",
+};
+
 const MegaMenu = ({ category }) => {
   const currentCategory = categories.find(
     (cat) => cat.name === category
@@ -11,7 +22,8 @@ const MegaMenu = ({ category }) => {
 
   return (
     <div className="absolute left-0 top-full mt-2 w-[850px] bg-white rounded-lg shadow-2xl border border-gray-200 z-50">
-      <div className="grid grid-cols-4 gap-8 p-6">
+      <div className="grid grid-cols-[1fr_1fr_1fr_320px] gap-8 p-6">
+
         {currentCategory.subcategories.map((sub) => (
           <div key={sub.id}>
             <h3 className="font-semibold text-[16px] mb-4">
@@ -33,13 +45,14 @@ const MegaMenu = ({ category }) => {
           </div>
         ))}
 
-        <div>
+        <div className="w-[260px] flex-shrink-0">
           <img
-            src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=600"
-            alt="Promo"
-            className="rounded-lg h-[220px] w-full object-cover"
+            src={menuImages[category]}
+            alt={category}
+            className="h-[260px] w-[320px] object-cover shadow-lg rounded-xl"
           />
         </div>
+
       </div>
     </div>
   );
