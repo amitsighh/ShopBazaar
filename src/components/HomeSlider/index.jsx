@@ -6,13 +6,36 @@ import 'swiper/css/navigation';
 
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
+const banners = [
+  "/images/Fashion-Sale-Banner.jpeg",
+  "/images/Electronic-Collection-Banner.jpeg",
+  "/images/Bags-Collection-Banner.jpeg",
+  "/images/Footwear-Collection-Banner.jpeg",
+  "/images/Grocery-Banner.jpeg",
+  "/images/Beauty-Collection-Banner.jpeg",
+  "/images/Wellness-Banner.jpeg",
+];
+
 const HomeSlider = () => {
     return (
-        <Swiper
-        spaceBetween={30}
+        <div className="homeslider py-4">
+          <div className="w-full px-0">
+          <Swiper
+          slidesPerView={1.1}
+        spaceBetween={15}
         centeredSlides={true}
+        loop={true}
+        observer={true}
+        observeParents={true}
+        coverflowEffect={{
+          rotate: 0,
+          stretch: 0,
+          depth: 100,
+          modifier: 2.5,
+        }}
+        speed={800}
         autoplay={{
-          delay: 2500,
+          delay: 3000,
           disableOnInteraction: false,
         }}
         pagination={{
@@ -22,17 +45,18 @@ const HomeSlider = () => {
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
+        {banners.map((image, index) => (
+          <SwiperSlide key={index}>
+            <img src={image} 
+            alt={`Banner ${index + 1}`}
+            className="w-full h-[520px] object-fill rounded-2xl" />
+          </SwiperSlide>
+        ))}
       </Swiper>
-    )
+          </div>
+        </div>
+
+    );
 }
 
 export default HomeSlider;
