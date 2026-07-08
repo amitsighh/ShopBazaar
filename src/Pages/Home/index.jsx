@@ -1,15 +1,19 @@
 import React from 'react';
 import HomeSlider from '../../components/HomeSlider';
 import CategorySlider from '../../components/CategorySlider';
+import OfferBanner from '../../components/OfferBanner';
 import { FaShippingFast } from "react-icons/fa";
 
 const Home = () => {
   return (
     <>
+    <div className="bg-[#f8e8e8]">
     <HomeSlider />
     <CategorySlider />
+    </div>
+    
 
-    <section className="py-16 bg-white">
+    <section className="py-6 bg-white">
       <div className="container">
         <div className="freeShipping w-full py-2 p-4 border-[#ff5252] flex items-center justify-between border-2 rounded-md">
           <div className="col1 flex items-center gap-4">
@@ -27,6 +31,8 @@ const Home = () => {
         </div>
       </div>
     </section>
+
+    <OfferBanner />
     </>
   )
 }
