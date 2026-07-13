@@ -3,6 +3,7 @@ import HomeSlider from '../../components/HomeSlider';
 import CategorySlider from '../../components/CategorySlider';
 import OfferBanner from '../../components/OfferBanner';
 import { FaShippingFast } from "react-icons/fa";
+import TrendingProducts from '../../components/TrendingProducts';
 
 const Home = () => {
   return (
@@ -33,6 +34,7 @@ const Home = () => {
     </section>
 
     <OfferBanner />
+    <TrendingProducts />
     </>
   )
 }
