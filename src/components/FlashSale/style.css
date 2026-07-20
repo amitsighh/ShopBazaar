@@ -1,0 +1,439 @@
+/* =========================================
+   FLASH SALE SECTION
+========================================= */
+
+.flashSaleSection {
+    width: 100%;
+    padding: 20px 0;
+    background: #fff;
+}
+
+.flashSaleSection .container {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+
+/* =========================================
+   MAIN FLASH SALE BANNER
+========================================= */
+
+.flashSaleBanner {
+    width: 100%;
+    min-height: 150px;
+    padding: 25px 35px;
+
+    background:
+        radial-gradient(
+            circle at 85% 50%,
+            rgba(37, 99, 235, 0.35),
+            transparent 35%
+        ),
+        linear-gradient(
+            110deg,
+            #07111f 0%,
+            #0b1728 45%,
+            #10294a 100%
+        );
+
+    border-radius: 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+
+    position: relative;
+    overflow: hidden;
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+
+/* Decorative Glow */
+
+.flashSaleBanner::before {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    right: -80px;
+    top: -100px;
+
+    background: rgba(37, 99, 235, 0.18);
+    border-radius: 50%;
+    filter: blur(20px);
+
+    pointer-events: none;
+}
+
+
+/* =========================================
+   LEFT TITLE
+========================================= */
+
+.flashSaleTitle {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    position: relative;
+    z-index: 2;   
+}
+.brandName {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color:#fff;
+    font-size: 18px;
+    font-weight: 800;
+    white-space: nowrap;
+    margin-right: 25px;
+}
+
+.brandBolt {
+    color: #facc15;
+    font-size: 20px;
+}
+
+.flashIcon {
+    font-size: 45px;
+    line-height: 1;
+}
+
+.flashSaleTitle h2 {
+    margin: 0;
+
+    font-size: 30px;
+    line-height: 1.1;
+
+    font-weight: 800;
+    letter-spacing: 1px;
+
+    color: #fff;
+}
+
+.flashSaleTitle h2 span {
+    color: #38bdf8;
+}
+
+.flashSaleTitle p {
+    margin: 7px 0 0;
+
+    font-size: 13px;
+    font-weight: 500;
+
+    color: #aeb9c9;
+}
+
+
+/* =========================================
+   COUNTDOWN SECTION
+========================================= */
+
+.flashCountdown {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+    z-index: 2;
+}
+
+.endsText {
+    margin: 0 0 8px;
+
+    color: #cbd5e1;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* Timer */
+
+.timer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.timer > b {
+    color: #fff;
+
+    font-size: 24px;
+    font-weight: 700;
+
+    margin-top: -12px;
+}
+
+
+/* Individual Time Box */
+
+.timeBox {
+    min-width: 58px;
+    height: 65px;
+
+    padding: 8px;
+
+    background: rgba(255, 255, 255, 0.10);
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    backdrop-filter: blur(8px);
+}
+
+.timeBox strong {
+    color: #fff;
+
+    font-size: 22px;
+    line-height: 1;
+
+    font-weight: 800;
+}
+
+.timeBox span {
+    margin-top: 6px;
+
+    color: #94a3b8;
+
+    font-size: 9px;
+    font-weight: 600;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================================
+   DISCOUNT AREA
+========================================= */
+
+.flashDiscount {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+    z-index: 2;
+}
+
+.flashDiscount p {
+    margin: 0;
+
+    color: #cbd5e1;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    letter-spacing: 1px;
+}
+
+.flashDiscount h3 {
+    margin: 0;
+
+    color: #38bdf8;
+
+    font-size: 38px;
+    line-height: 1;
+
+    font-weight: 900;
+}
+
+.flashDiscount strong {
+    margin-top: 2px;
+
+    color: #fff;
+
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.flashDiscount span {
+    margin-top: 5px;
+
+    color: #94a3b8;
+
+    font-size: 10px;
+}
+
+
+/* =========================================
+   SHOP NOW BUTTON
+========================================= */
+
+.flashAction {
+    position: relative;
+    z-index: 2;
+}
+
+.flashAction button {
+    border: none;
+    outline: none;
+
+    padding: 14px 28px;
+
+    background: #2563eb;
+    color: #fff;
+
+    border-radius: 50px;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    letter-spacing: 0.5px;
+
+    cursor: pointer;
+
+    white-space: nowrap;
+
+    transition: all 0.3s ease;
+
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
+}
+
+.flashAction button:hover {
+    background: #fff;
+    color: #2563eb;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+
+/* =========================================
+   TABLET RESPONSIVE
+========================================= */
+
+@media (max-width: 992px) {
+
+    .flashSaleBanner {
+        padding: 25px;
+
+        gap: 20px;
+    }
+
+    .flashSaleTitle h2 {
+        font-size: 25px;
+    }
+
+    .flashIcon {
+        font-size: 38px;
+    }
+
+    .flashDiscount h3 {
+        font-size: 32px;
+    }
+
+    .timeBox {
+        min-width: 50px;
+        height: 60px;
+    }
+
+    .timeBox strong {
+        font-size: 19px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .flashSaleSection {
+        padding: 15px 0;
+    }
+
+    .flashSaleSection .container {
+        width: 92%;
+    }
+
+    .flashSaleBanner {
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 30px 20px;
+
+        gap: 25px;
+    }
+
+    .flashSaleTitle {
+        justify-content: center;
+    }
+
+    .flashSaleTitle h2 {
+        font-size: 28px;
+    }
+
+    .flashSaleTitle p {
+        font-size: 12px;
+    }
+
+    .flashDiscount h3 {
+        font-size: 38px;
+    }
+
+    .flashAction {
+        width: 100%;
+    }
+
+    .flashAction button {
+        width: 100%;
+
+        max-width: 250px;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+    .flashSaleBanner {
+        padding: 25px 15px;
+
+        border-radius: 14px;
+    }
+
+    .flashIcon {
+        font-size: 35px;
+    }
+
+    .flashSaleTitle h2 {
+        font-size: 24px;
+    }
+
+    .timer {
+        gap: 5px;
+    }
+
+    .timeBox {
+        min-width: 52px;
+        height: 58px;
+    }
+
+    .timeBox strong {
+        font-size: 18px;
+    }
+
+    .timer > b {
+        font-size: 20px;
+    }
+
+    .flashDiscount h3 {
+        font-size: 34px;
+    }
+}

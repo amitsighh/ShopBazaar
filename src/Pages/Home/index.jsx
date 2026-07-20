@@ -4,6 +4,9 @@ import CategorySlider from '../../components/CategorySlider';
 import OfferBanner from '../../components/OfferBanner';
 import { FaShippingFast } from "react-icons/fa";
 import TrendingProducts from '../../components/TrendingProducts';
+import FlashSale from "../../components/FlashSale"
+import FeaturedProducts from "../../components/FeaturedProducts"
+import TechUpgradeBanner from "../../components/TechUpgradeBanner"
 
 const Home = () => {
   return (
@@ -35,6 +38,9 @@ const Home = () => {
 
     <OfferBanner />
     <TrendingProducts />
+    <FlashSale />
+    <FeaturedProducts />
+    <TechUpgradeBanner />
     </>
   )
 }

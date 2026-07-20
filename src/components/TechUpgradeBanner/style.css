@@ -1,0 +1,404 @@
+/* ========================================
+   TECH UPGRADE BANNER SECTION
+======================================== */
+
+.techUpgradeSection {
+  width: 100%;
+  padding: 45px 0;
+  background: #fff;
+}
+
+/* ========================================
+   BANNER
+======================================== */
+
+.techUpgradeBanner {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/5;
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow:
+    0 20px 50px rgba(2, 6, 23, 0.18);
+  isolation: isolate;
+}
+
+.techUpgradeBg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  object-fit: cover;
+  object-position: center;
+  z-index: -3;
+  transition: transform 0.8s ease;
+}
+
+.techUpgradeBanner:hover .techUpgradeBg {
+  transform: scale(1.025);
+}
+
+/* ========================================
+   DARK OVERLAY
+======================================== */
+
+.techUpgradeOverlay {
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(1, 8, 30, 0.45) 0%,
+      rgba(1, 8, 30, 0.18) 42%,
+      transparent 65%
+    );
+
+  z-index: -2;
+}
+
+/* ========================================
+   CONTENT
+======================================== */
+
+.techUpgradeContent {
+  position: absolute;
+
+  left: 6%;
+  bottom: 7%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  max-width: 430px;
+
+  z-index: 5;
+}
+
+/* ========================================
+   EXCLUSIVE BADGE
+======================================== */
+
+.techOfferBadge {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 8px 16px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #2563eb,
+      #7c3aed
+    );
+
+  color: #fff;
+
+  border-radius: 50px;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  margin-bottom: 12px;
+
+  box-shadow:
+    0 8px 20px rgba(37, 99, 235, 0.35);
+}
+
+/* ========================================
+   OFFER TEXT
+======================================== */
+
+.techOfferText {
+  color: #dbeafe;
+
+  font-size: 15px;
+  font-weight: 500;
+
+  line-height: 1.6;
+
+  margin: 0 0 12px;
+}
+
+/* ========================================
+   DISCOUNT
+======================================== */
+
+.techDiscount {
+  display: flex;
+  flex-direction: column;
+
+  color: #fff;
+
+  margin-bottom: 16px;
+}
+
+.techDiscount > span {
+  font-size: 12px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  color: #bfdbfe;
+
+  margin-bottom: 2px;
+}
+
+.techDiscount div {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.techDiscount strong {
+  font-size: 46px;
+  line-height: 1;
+
+  font-weight: 800;
+
+  background:
+    linear-gradient(
+      90deg,
+      #38bdf8,
+      #a855f7
+    );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  color: transparent;
+}
+
+.techDiscount b {
+  font-size: 20px;
+  color: #fff;
+
+  margin-bottom: 4px;
+}
+
+/* ========================================
+   BUTTONS
+======================================== */
+
+.techBannerButtons {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+}
+
+/* SHOP NOW */
+
+.techShopBtn {
+  height: 46px;
+
+  padding: 0 24px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #2563eb,
+      #9333ea
+    );
+
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+
+  box-shadow:
+    0 10px 25px rgba(37, 99, 235, 0.35);
+}
+
+.techShopBtn svg {
+  font-size: 18px;
+}
+
+.techShopBtn:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 15px 30px rgba(37, 99, 235, 0.5);
+}
+
+/* EXPLORE */
+
+.techExploreBtn {
+  height: 46px;
+
+  padding: 0 22px;
+
+  border: 1px solid rgba(255, 255, 255, 0.4);
+
+  border-radius: 12px;
+
+  background:
+    rgba(255, 255, 255, 0.08);
+
+  backdrop-filter: blur(8px);
+
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.techExploreBtn svg {
+  transition: transform 0.3s ease;
+}
+
+.techExploreBtn:hover {
+  background: #fff;
+  color: #111827;
+
+  transform: translateY(-3px);
+}
+
+.techExploreBtn:hover svg {
+  transform: translateX(4px);
+}
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 992px) {
+
+  .techUpgradeBanner {
+    height: 370px;
+  }
+
+  .techUpgradeContent {
+    left: 5%;
+    bottom: 6%;
+  }
+
+  .techDiscount strong {
+    font-size: 40px;
+  }
+}
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 768px) {
+
+  .techUpgradeSection {
+    padding: 30px 0;
+  }
+
+  .techUpgradeBanner {
+    height: 340px;
+
+    border-radius: 20px;
+  }
+
+  .techUpgradeBg {
+    object-position: center;
+  }
+
+  .techUpgradeOverlay {
+    background:
+      linear-gradient(
+        90deg,
+        rgba(1, 8, 30, 0.75),
+        rgba(1, 8, 30, 0.25)
+      );
+  }
+
+  .techUpgradeContent {
+    left: 5%;
+    bottom: 6%;
+
+    max-width: 300px;
+  }
+
+  .techOfferText {
+    font-size: 13px;
+  }
+
+  .techDiscount strong {
+    font-size: 34px;
+  }
+
+  .techDiscount b {
+    font-size: 17px;
+  }
+
+  .techBannerButtons {
+    gap: 8px;
+  }
+
+  .techShopBtn,
+  .techExploreBtn {
+    height: 42px;
+
+    padding: 0 15px;
+
+    font-size: 12px;
+  }
+}
+
+/* ========================================
+   SMALL MOBILE
+======================================== */
+
+@media (max-width: 480px) {
+
+  .techUpgradeBanner {
+    height: 300px;
+  }
+
+  .techOfferBadge {
+    font-size: 10px;
+
+    padding: 7px 12px;
+  }
+
+  .techOfferText {
+    display: none;
+  }
+
+  .techDiscount strong {
+    font-size: 30px;
+  }
+
+  .techBannerButtons {
+    flex-wrap: wrap;
+  }
+
+  .techShopBtn,
+  .techExploreBtn {
+    height: 40px;
+  }
+}
