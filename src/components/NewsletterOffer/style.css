@@ -1,0 +1,467 @@
+.newsletterOffer {
+    width: 100%;
+    padding: 2px 0 55px;
+
+    background: linear-gradient(
+        180deg,
+        #eef3fb 0%,
+        #f7f9fd 100%
+    );
+}
+
+.newsletterBox {
+    position: relative;
+    width: 100%;
+    min-height: 145px;
+    padding: 18px 32px;
+    display: grid;
+    grid-template-columns: 165px 1fr auto;
+    align-items: center;
+    gap: 25px;
+    overflow: hidden;
+    border-radius: 24px;
+
+    background:
+        radial-gradient(
+            circle at 15% 20%,
+            rgba(139, 92, 246, 0.35),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 85% 80%,
+            rgba(37, 99, 235, 0.32),
+            transparent 32%
+        ),
+        linear-gradient(
+            135deg,
+            #0f172a 0%,
+            #172554 45%,
+            #312e81 100%
+        );
+
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    box-shadow:
+        0 22px 55px rgba(15, 23, 42, 0.18),
+        inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+
+.newsletterGlow {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(5px);
+    pointer-events: none;
+}
+
+
+.glowOne {
+    width: 220px;
+    height: 220px;
+    left: -100px;
+    top: -120px;
+    background: rgba(168, 85, 247, 0.18);
+}
+
+.glowTwo {
+    width: 260px;
+    height: 260px;
+    right: -120px;
+    bottom: -150px;
+    background: rgba(59, 130, 246, 0.18);
+}
+
+
+.newsletterVisual {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2px;
+    width: 160px;
+    height: 90px;
+    flex-shrink: 0;
+}
+
+/* MAIL ICON */
+
+.offerIconBox {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    background: linear-gradient(
+        135deg,
+        rgba(168, 85, 247, 0.95),
+        rgba(79, 70, 229, 0.95)
+    );
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow:
+        0 12px 30px rgba(124, 58, 237, 0.32),
+        inset 0 1px 0 rgba(255, 255, 255, 0.20);
+    transform: rotate(-4deg);
+    transition: transform 0.35s ease;
+}
+
+
+.offerIconBox svg {
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.newsletterBox:hover .offerIconBox {
+    transform: rotate(0deg) translateY(-3px);
+}
+
+
+/* =========================================
+   ₹200 OFF
+========================================= */
+
+.offerAmount {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: -34px;
+    line-height: 0.9;
+    flex-shrink: 0;
+}
+
+
+.offerAmount span {
+    font-size: 25px;
+    font-weight: 850;
+    letter-spacing: -0.5px;
+    white-space: nowrap;
+    background: linear-gradient(
+        135deg,
+        #ffffff,
+        #c4b5fd
+    );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+
+.offerAmount small {
+    margin-top: 7px;
+    margin-left: 2px;
+    color: #a5b4fc;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.newsletterContent {
+    position: relative;
+    z-index: 5;
+    max-width: 440px;
+    margin-left: 65px;
+}
+
+
+/* BADGE */
+
+.newsletterBadge {
+    display: inline-flex;
+    align-items: center;
+    width: max-content;
+    padding: 6px 13px;
+    margin-bottom: 9px;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.10);
+    border: 1px solid rgba(255, 255, 255, 0.13);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    color: #c7d2fe;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+}
+
+/* HEADING */
+
+.newsletterContent h2 {
+    margin: 0 0 8px;
+    color: #ffffff;
+    font-size: 27px;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+}
+
+
+/* DESCRIPTION */
+
+.newsletterContent p {
+    max-width: 410px;
+    margin: 0;
+    color: rgba(226, 232, 240, 0.78);
+    font-size: 12.5px;
+    line-height: 1.65;
+}
+
+
+.newsletterForm {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 470px;
+}
+
+
+.newsletterInputBox {
+    position: relative;
+    flex: 1;
+    min-width: 250px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    padding: 0 17px;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.10);
+    border: 1px solid rgba(255, 255, 255, 0.17);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    transition:
+        border-color 0.3s ease,
+        background 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* INPUT ICON */
+
+.newsletterInputBox > svg {
+    flex-shrink: 0;
+    margin-right: 10px;
+    color: #c7d2fe;
+    font-size: 18px;
+}
+
+/* INPUT */
+
+.newsletterInputBox input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+
+.newsletterInputBox input::placeholder {
+    color: rgba(226, 232, 240, 0.62);
+}
+
+/* INPUT FOCUS */
+
+.newsletterInputBox:focus-within {
+    background: rgba(255, 255, 255, 0.14);
+    border-color: rgba(165, 180, 252, 0.65);
+    box-shadow:
+        0 0 0 4px rgba(99, 102, 241, 0.10);
+}
+
+.newsletterForm button {
+    height: 52px;
+    padding: 0 22px;
+    border: none;
+    outline: none;
+    border-radius: 14px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    flex-shrink: 0;
+    background: linear-gradient(
+        135deg,
+        #7c3aed,
+        #4f46e5,
+        #2563eb
+    );
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow:
+        0 10px 25px rgba(79, 70, 229, 0.35);
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.newsletterForm button svg {
+    font-size: 16px;
+    transition: transform 0.3s ease;
+}
+
+
+/* BUTTON HOVER */
+
+.newsletterForm button:hover {
+    transform: translateY(-3px);
+    box-shadow:
+        0 15px 32px rgba(79, 70, 229, 0.48);
+}
+
+
+.newsletterForm button:hover svg {
+    transform: translateX(4px);
+}
+
+.newsletterBox::before {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    right: 30%;
+    top: -80px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    pointer-events: none;
+}
+
+
+.newsletterBox::after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 32%;
+    bottom: -55px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.035);
+    pointer-events: none;
+}
+
+
+/* LAPTOP */
+
+@media (max-width: 1200px) {
+    .newsletterBox {
+        padding: 32px;
+        grid-template-columns: auto 1fr;
+        gap: 22px 28px;
+    }
+
+    .newsletterForm {
+        grid-column: 1 / -1;
+        max-width: 100%;
+    }
+
+
+    .newsletterInputBox {
+        min-width: 0;
+    }
+
+}
+/* TABLET */
+
+@media (max-width: 768px) {
+    .newsletterOffer {
+        padding: 35px 0 45px;
+    }
+    .newsletterBox {
+        min-height: auto;
+        padding: 28px;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        border-radius: 23px;
+    }
+
+    .newsletterVisual {
+        margin-bottom: 0;
+    }
+
+
+    .newsletterContent {
+        max-width: 100%;
+    }
+
+    .newsletterContent h2 {
+        font-size: 25px;
+    }
+
+    .newsletterForm {
+        grid-column: auto;
+        max-width: 100%;
+    }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 520px) {
+    .newsletterOffer {
+        padding: 28px 0 38px;
+    }
+    .newsletterBox {
+        padding: 24px 20px;
+        border-radius: 20px;
+    }
+
+    .offerIconBox {
+        width: 54px;
+        height: 54px;
+        border-radius: 15px;
+    }
+
+
+    .offerIconBox svg {
+        font-size: 24px;
+    }
+
+    .offerAmount span {
+        font-size: 27px;
+    }
+
+
+    .newsletterContent h2 {
+        font-size: 22px;
+    }
+
+    .newsletterContent p {
+        font-size: 12px;
+    }
+
+    .newsletterForm {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .newsletterInputBox {
+        width: 100%;
+        min-width: 0;
+        height: 50px;
+    }
+
+
+.newsletterForm button {
+    width: 100%;
+    height: 50px;
+}
+
+.newsletterGiftImage {
+    width: 78px;
+    height: 78px;
+    object-fit:contain;
+    display: block;
+    flex-shrink: 0;
+    margin: 0;
+    filter: drop-shadow 0 7px 14px (79, 70, 229, 0.35);
+}
+}

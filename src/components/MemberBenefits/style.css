@@ -1,0 +1,668 @@
+/* =========================================
+   MEMBER BENEFITS SECTION
+========================================= */
+
+.memberBenefits {
+    width: 100%;
+    padding: 20px 0 55px;
+    background: linear-gradient(180deg, #f8faff 0%, #f2f6fc 100%);
+}
+
+
+/* =========================================
+   TWO CARD GRID
+========================================= */
+
+.memberGrid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
+    width: 100%;
+}
+
+
+/* =========================================
+   MEMBER CARD
+========================================= */
+
+.memberCard {
+    position: relative;
+
+    display: grid;
+    grid-template-columns: 45% 55%;
+
+    width: 100%;
+    height: 330px;
+
+    border-radius: 26px;
+    overflow: hidden;
+
+    transition: all 0.4s ease;
+
+    box-shadow:
+        0 12px 30px rgba(15, 23, 42, 0.10),
+        0 2px 8px rgba(15, 23, 42, 0.05);
+}
+
+
+/* Reward Card */
+
+.rewardCard {
+    background:
+        radial-gradient(
+            circle at 70% 50%,
+            rgba(139, 92, 246, 0.35),
+            transparent 42%
+        ),
+        linear-gradient(
+            135deg,
+            #13052e 0%,
+            #31106b 52%,
+            #6d28d9 100%
+        );
+}
+
+
+/* App Card */
+
+.appCard {
+    background:
+        radial-gradient(
+            circle at 72% 45%,
+            rgba(56, 189, 248, 0.35),
+            transparent 42%
+        ),
+        linear-gradient(
+            135deg,
+            #082f49 0%,
+            #075985 48%,
+            #2563eb 100%
+        );
+}
+
+
+/* =========================================
+   CARD HOVER
+========================================= */
+
+.memberCard:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 24px 50px rgba(15, 23, 42, 0.18),
+        0 8px 18px rgba(15, 23, 42, 0.08);
+}
+
+
+/* =========================================
+   TEXT CONTENT
+========================================= */
+
+.memberContent {
+    position: relative;
+    z-index: 5;
+
+    width: 100%;
+    height: 100%;
+
+    padding: 30px 10px 30px 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+/* =========================================
+   BADGE
+========================================= */
+
+.memberBadge {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+
+    width: max-content;
+
+    padding: 7px 13px;
+
+    margin-bottom: 14px;
+
+    border: 1px solid rgba(255, 255, 255, 0.20);
+
+    border-radius: 50px;
+
+    background: rgba(255, 255, 255, 0.13);
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    color: #ffffff;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 0.3px;
+
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+
+.memberBadge svg {
+    font-size: 13px;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.memberContent h2 {
+    margin: 0 0 12px;
+
+    color: #ffffff;
+
+    font-size: 32px;
+    font-weight: 800;
+
+    line-height: 1.08;
+
+    letter-spacing: -0.6px;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.memberContent p {
+    max-width: 260px;
+
+    margin: 0 0 14px;
+
+    color: rgba(255, 255, 255, 0.78);
+
+    font-size: 13px;
+
+    line-height: 1.65;
+
+    font-weight: 400;
+}
+
+
+/* =========================================
+   SMALL FEATURES
+========================================= */
+
+.memberFeatures {
+    display: flex;
+    flex-direction: column;
+
+    gap: 6px;
+
+    margin-bottom: 17px;
+}
+
+
+.memberFeatures span {
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+
+    color: rgba(255, 255, 255, 0.88);
+
+    font-size: 11px;
+    font-weight: 600;
+}
+
+
+.memberFeatures span svg {
+    flex-shrink: 0;
+
+    font-size: 13px;
+
+    color: #ffffff;
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.memberBtn {
+    position: relative;
+
+    min-width: 145px;
+    height: 43px;
+
+    padding: 0 17px;
+
+    border: none;
+    outline: none;
+
+    border-radius: 12px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    color: #ffffff;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease;
+}
+
+
+.memberBtn svg {
+    font-size: 15px;
+
+    transition: transform 0.3s ease;
+}
+
+
+/* Reward Button */
+
+.rewardBtn {
+    background: linear-gradient(
+        135deg,
+        #7c3aed,
+        #a855f7
+    );
+
+    box-shadow:
+        0 8px 20px rgba(168, 85, 247, 0.32);
+}
+
+
+/* App Button */
+
+.appBtn {
+    background: linear-gradient(
+        135deg,
+        #06b6d4,
+        #2563eb
+    );
+
+    box-shadow:
+        0 8px 20px rgba(37, 99, 235, 0.30);
+}
+
+
+/* Button Hover */
+
+.memberBtn:hover {
+    transform: translateY(-3px);
+}
+
+
+.rewardBtn:hover {
+    background: linear-gradient(
+        135deg,
+        #8b5cf6,
+        #c026d3
+    );
+
+    box-shadow:
+        0 13px 28px rgba(168, 85, 247, 0.42);
+}
+
+
+.appBtn:hover {
+    background: linear-gradient(
+        135deg,
+        #0891b2,
+        #1d4ed8
+    );
+
+    box-shadow:
+        0 13px 28px rgba(37, 99, 235, 0.40);
+}
+
+
+/* Arrow Animation */
+
+.memberBtn:hover .arrowIcon {
+    transform: translateX(4px);
+}
+
+
+/* =========================================
+   IMAGE AREA
+========================================= */
+
+.memberImageBox {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Image */
+
+.memberImage {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+    object-position: center;
+
+    transition: transform 0.6s ease;
+}
+
+
+/* Image Hover */
+
+.memberCard:hover .memberImage {
+    transform: scale(1.045);
+}
+
+
+/* =========================================
+   SOFT BLEND BETWEEN TEXT + IMAGE
+========================================= */
+
+.memberImageBox::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+
+    width: 60px;
+
+    z-index: 2;
+
+    pointer-events: none;
+}
+
+
+.rewardCard .memberImageBox::before {
+    background: linear-gradient(
+        90deg,
+        #31106b 0%,
+        rgba(49, 16, 107, 0.55) 35%,
+        transparent 100%
+    );
+}
+
+
+.appCard .memberImageBox::before {
+    background: linear-gradient(
+        90deg,
+        #075985 0%,
+        rgba(7, 89, 133, 0.50) 35%,
+        transparent 100%
+    );
+}
+
+
+/* =========================================
+   DECORATIVE GLOW
+========================================= */
+
+.memberCard::before {
+    content: "";
+
+    position: absolute;
+
+    width: 180px;
+    height: 180px;
+
+    border-radius: 50%;
+
+    top: -100px;
+    left: -70px;
+
+    background: rgba(255, 255, 255, 0.07);
+
+    pointer-events: none;
+}
+
+
+.memberCard::after {
+    content: "";
+
+    position: absolute;
+
+    width: 130px;
+    height: 130px;
+
+    border-radius: 50%;
+
+    bottom: -90px;
+    left: 130px;
+
+    background: rgba(255, 255, 255, 0.05);
+
+    pointer-events: none;
+}
+
+
+/* =========================================
+   LAPTOP / SMALL DESKTOP
+========================================= */
+
+@media (max-width: 1200px) {
+
+    .memberCard {
+        height: 310px;
+        grid-template-columns: 47% 53%;
+    }
+
+    .memberContent {
+        padding: 26px 8px 26px 25px;
+    }
+
+    .memberContent h2 {
+        font-size: 28px;
+    }
+
+    .memberContent p {
+        font-size: 12px;
+    }
+
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 992px) {
+
+    .memberBenefits {
+        padding: 45px 0;
+    }
+
+    .memberGrid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .memberCard {
+        height: 320px;
+
+        grid-template-columns: 45% 55%;
+    }
+
+    .memberContent {
+        padding: 30px;
+    }
+
+    .memberContent h2 {
+        font-size: 32px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .memberBenefits {
+        padding: 35px 0;
+    }
+
+    .memberCard {
+        height: 290px;
+
+        grid-template-columns: 48% 52%;
+
+        border-radius: 22px;
+    }
+
+    .memberContent {
+        padding: 22px 5px 22px 20px;
+    }
+
+    .memberBadge {
+        padding: 6px 10px;
+
+        font-size: 9px;
+
+        margin-bottom: 10px;
+    }
+
+    .memberContent h2 {
+        font-size: 25px;
+
+        margin-bottom: 9px;
+    }
+
+    .memberContent p {
+        font-size: 11px;
+
+        line-height: 1.5;
+
+        margin-bottom: 10px;
+    }
+
+    .memberFeatures {
+        margin-bottom: 13px;
+    }
+
+    .memberFeatures span {
+        font-size: 10px;
+    }
+
+    .memberBtn {
+        min-width: 125px;
+
+        height: 39px;
+
+        padding: 0 13px;
+
+        font-size: 11px;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+    .memberGrid {
+        gap: 18px;
+    }
+
+    .memberCard {
+        height: auto;
+
+        min-height: 440px;
+
+        grid-template-columns: 1fr;
+        grid-template-rows: 220px auto;
+    }
+
+
+    /* Image first on mobile */
+
+    .memberImageBox {
+        grid-row: 1;
+    }
+
+
+    .memberContent {
+        grid-row: 2;
+
+        padding: 23px;
+
+        justify-content: flex-start;
+    }
+
+
+    .memberContent h2 {
+        font-size: 27px;
+    }
+
+
+    .memberContent p {
+        max-width: 100%;
+
+        font-size: 12px;
+    }
+
+
+    .memberFeatures span {
+        font-size: 11px;
+    }
+
+
+    .memberImageBox::before {
+        top: auto;
+
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        width: 100%;
+        height: 55px;
+    }
+
+
+    .rewardCard .memberImageBox::before {
+        background: linear-gradient(
+            0deg,
+            #31106b,
+            transparent
+        );
+    }
+
+
+    .appCard .memberImageBox::before {
+        background: linear-gradient(
+            0deg,
+            #075985,
+            transparent
+        );
+    }
+
+}

@@ -1,0 +1,1221 @@
+/* =====================================================
+   SHOPBAZAAR PREMIUM FOOTER
+===================================================== */
+
+.footer {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+
+    color: #ffffff;
+
+    background:
+        radial-gradient(
+            circle at 10% 10%,
+            rgba(79, 70, 229, 0.15),
+            transparent 28%
+        ),
+        radial-gradient(
+            circle at 90% 25%,
+            rgba(37, 99, 235, 0.12),
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #07101f 0%,
+            #0b1426 45%,
+            #0c1730 100%
+        );
+}
+
+
+/* =====================================================
+   MAIN FOOTER
+===================================================== */
+
+.footerMain {
+    position: relative;
+    padding: 55px 0 45px;
+}
+
+
+/* subtle top glow */
+
+.footerMain::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    width: 65%;
+    height: 1px;
+
+    transform: translateX(-50%);
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(99, 102, 241, 0.65),
+        rgba(59, 130, 246, 0.55),
+        transparent
+    );
+}
+
+
+/* =====================================================
+   MAIN GRID
+===================================================== */
+
+.footerGrid {
+    display: grid;
+
+    grid-template-columns:
+        1.45fr
+        0.85fr
+        1.05fr
+        0.85fr
+        1.25fr;
+
+    gap: 40px;
+
+    align-items: start;
+}
+
+
+/* =====================================================
+   BRAND
+===================================================== */
+
+.footerBrand {
+    padding-right: 15px;
+}
+
+
+.footerLogo {
+    display: inline-block;
+
+    margin: 0 0 7px;
+
+    color: #ffffff;
+
+    font-size: 28px;
+    font-weight: 850;
+
+    letter-spacing: -1px;
+}
+
+
+.footerLogo span {
+    background: linear-gradient(
+        135deg,
+        #60a5fa,
+        #818cf8,
+        #a78bfa
+    );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    color: transparent;
+}
+
+
+.footerTagline {
+    margin: 0 0 13px;
+
+    color: #a5b4fc;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: 0.3px;
+}
+
+
+.footerDescription {
+    max-width: 275px;
+
+    margin: 0;
+
+    color: #94a3b8;
+
+    font-size: 12px;
+    line-height: 1.75;
+}
+
+
+/* =====================================================
+   SOCIAL ICONS
+===================================================== */
+
+.footerSocials {
+    display: flex;
+    align-items: center;
+
+    gap: 9px;
+
+    margin-top: 21px;
+}
+
+
+.footerSocials a {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 11px;
+
+    color: #cbd5e1;
+
+    font-size: 16px;
+
+    text-decoration: none;
+
+    background: rgba(255, 255, 255, 0.055);
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    transition:
+        transform 0.3s ease,
+        color 0.3s ease,
+        background 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.footerSocials a:hover {
+    transform: translateY(-4px);
+
+    color: #ffffff;
+
+    background: linear-gradient(
+        135deg,
+        rgba(79, 70, 229, 0.85),
+        rgba(37, 99, 235, 0.85)
+    );
+
+    border-color: rgba(129, 140, 248, 0.55);
+
+    box-shadow:
+        0 9px 22px rgba(37, 99, 235, 0.20);
+}
+
+
+/* =====================================================
+   COMMON FOOTER COLUMN
+===================================================== */
+
+.footerColumn h3,
+.footerContact h3 {
+    position: relative;
+
+    margin: 3px 0 22px;
+
+    padding-bottom: 10px;
+
+    color: #f8fafc;
+
+    font-size: 14px;
+    font-weight: 750;
+
+    letter-spacing: 0.2px;
+}
+
+
+/* small underline */
+
+.footerColumn h3::after,
+.footerContact h3::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    width: 30px;
+    height: 2px;
+
+    border-radius: 20px;
+
+    background: linear-gradient(
+        90deg,
+        #6366f1,
+        #3b82f6
+    );
+}
+
+
+/* =====================================================
+   FOOTER LINKS
+===================================================== */
+
+.footerColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.footerColumn a {
+    width: fit-content;
+
+    display: flex;
+    align-items: center;
+
+    gap: 3px;
+
+    margin-bottom: 11px;
+
+    color: #94a3b8;
+
+    font-size: 11.5px;
+    font-weight: 500;
+
+    text-decoration: none;
+
+    transition:
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.footerColumn a svg {
+    width: 0;
+
+    opacity: 0;
+
+    color: #818cf8;
+
+    font-size: 12px;
+
+    transform: translateX(-7px);
+
+    transition:
+        width 0.3s ease,
+        opacity 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.footerColumn a:hover {
+    color: #ffffff;
+
+    transform: translateX(3px);
+}
+
+
+.footerColumn a:hover svg {
+    width: 12px;
+
+    opacity: 1;
+
+    transform: translateX(0);
+}
+
+
+/* =====================================================
+   CONTACT SECTION
+===================================================== */
+
+.footerContactItem {
+    display: flex;
+    align-items: center;
+
+    gap: 11px;
+
+    margin-bottom: 15px;
+}
+
+
+.contactIcon {
+    width: 37px;
+    height: 37px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 11px;
+
+    color: #a5b4fc;
+
+    font-size: 15px;
+
+    background: rgba(99, 102, 241, 0.09);
+
+    border: 1px solid rgba(129, 140, 248, 0.13);
+}
+
+
+.footerContactItem span {
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: #64748b;
+
+    font-size: 9px;
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.7px;
+}
+
+
+.footerContactItem p {
+    margin: 0;
+
+    color: #cbd5e1;
+
+    font-size: 11px;
+    line-height: 1.4;
+}
+
+
+/* =====================================================
+   TRUST FEATURES STRIP
+===================================================== */
+
+.footerTrust {
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+
+    background: rgba(255, 255, 255, 0.025);
+}
+
+
+.footerTrustGrid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+.trustItem {
+    position: relative;
+
+    min-height: 92px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    padding: 17px 20px;
+}
+
+
+/* vertical separator */
+
+.trustItem:not(:last-child)::after {
+    content: "";
+
+    position: absolute;
+
+    top: 25%;
+    right: 0;
+
+    width: 1px;
+    height: 50%;
+
+    background: rgba(255, 255, 255, 0.07);
+}
+
+
+.trustIcon {
+    width: 43px;
+    height: 43px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 13px;
+
+    color: #a5b4fc;
+
+    font-size: 19px;
+
+    background: linear-gradient(
+        135deg,
+        rgba(99, 102, 241, 0.12),
+        rgba(37, 99, 235, 0.08)
+    );
+
+    border: 1px solid rgba(129, 140, 248, 0.13);
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease;
+}
+
+
+.trustItem:hover .trustIcon {
+    transform: translateY(-3px);
+
+    background: linear-gradient(
+        135deg,
+        rgba(99, 102, 241, 0.22),
+        rgba(37, 99, 235, 0.16)
+    );
+}
+
+
+.trustItem h4 {
+    margin: 0 0 4px;
+
+    color: #e2e8f0;
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+.trustItem p {
+    margin: 0;
+
+    color: #64748b;
+
+    font-size: 10px;
+}
+
+
+/* =====================================================
+   APP + PAYMENT AREA
+===================================================== */
+
+.footerExtras {
+    padding: 26px 0;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+
+.footerExtrasGrid {
+    display: grid;
+
+    grid-template-columns: 1.4fr 1fr;
+
+    gap: 25px;
+}
+
+
+/* =====================================================
+   APP DOWNLOAD
+===================================================== */
+
+.footerApp {
+    min-height: 95px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 17px 20px;
+
+    border-radius: 17px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(79, 70, 229, 0.09),
+            rgba(37, 99, 235, 0.055)
+        );
+
+    border: 1px solid rgba(129, 140, 248, 0.11);
+}
+
+
+.footerExtraIcon {
+    width: 45px;
+    height: 45px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 13px;
+
+    color: #c4b5fd;
+
+    font-size: 21px;
+
+    background: rgba(99, 102, 241, 0.13);
+
+    border: 1px solid rgba(129, 140, 248, 0.15);
+}
+
+
+.footerAppContent {
+    flex: 1;
+}
+
+
+.footerAppContent > span,
+.paymentHeading span {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #818cf8;
+
+    font-size: 8.5px;
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+
+.footerAppContent h4 {
+    margin: 0 0 4px;
+
+    color: #f1f5f9;
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+
+.footerAppContent p {
+    margin: 0;
+
+    color: #64748b;
+
+    font-size: 10px;
+}
+
+
+/* =====================================================
+   APP BUTTONS
+===================================================== */
+
+.appButtons {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+}
+
+
+.appButtons button {
+    min-width: 115px;
+    height: 47px;
+
+    padding: 6px 14px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    border-radius: 11px;
+
+    border: 1px solid rgba(255, 255, 255, 0.11);
+
+    outline: none;
+
+    color: #ffffff;
+
+    background: rgba(2, 6, 23, 0.60);
+
+    cursor: pointer;
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+.appButtons button:hover {
+    transform: translateY(-3px);
+
+    background: rgba(15, 23, 42, 0.95);
+
+    border-color: rgba(129, 140, 248, 0.30);
+}
+
+
+.appButtons button small {
+    color: #94a3b8;
+
+    font-size: 7px;
+    line-height: 1;
+}
+
+
+.appButtons button strong {
+    margin-top: 3px;
+
+    color: #ffffff;
+
+    font-size: 11px;
+    font-weight: 650;
+}
+
+
+/* =====================================================
+   PAYMENT AREA
+===================================================== */
+
+.footerPayment {
+    min-height: 95px;
+
+    padding: 17px 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    border-radius: 17px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(37, 99, 235, 0.055),
+            rgba(99, 102, 241, 0.07)
+        );
+
+    border: 1px solid rgba(129, 140, 248, 0.10);
+}
+
+
+.paymentHeading {
+    display: flex;
+    align-items: center;
+
+    gap: 9px;
+
+    margin-bottom: 12px;
+}
+
+
+.paymentHeading > svg {
+    color: #a5b4fc;
+
+    font-size: 20px;
+}
+
+
+.paymentHeading h4 {
+    margin: 0;
+
+    color: #e2e8f0;
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+/* =====================================================
+   PAYMENT BADGES
+===================================================== */
+
+.paymentMethods {
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+
+    flex-wrap: wrap;
+}
+
+
+.paymentMethods span {
+    min-width: 62px;
+    height: 29px;
+
+    padding: 0 9px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 7px;
+
+    color: #cbd5e1;
+
+    font-size: 9px;
+    font-weight: 750;
+
+    background: rgba(255, 255, 255, 0.055);
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease;
+}
+
+
+.paymentMethods span:hover {
+    transform: translateY(-2px);
+
+    color: #ffffff;
+
+    background: rgba(255, 255, 255, 0.09);
+}
+
+
+/* =====================================================
+   BOTTOM FOOTER
+===================================================== */
+
+.footerBottom {
+    padding: 18px 0;
+
+    background: rgba(2, 6, 23, 0.28);
+}
+
+
+.footerBottomInner {
+    display: grid;
+
+    grid-template-columns: 1fr auto 1fr;
+
+    align-items: center;
+
+    gap: 20px;
+}
+
+
+.footerBottomInner > p {
+    margin: 0;
+
+    color: #64748b;
+
+    font-size: 10.5px;
+}
+
+
+.footerBottomInner > p span {
+    color: #a5b4fc;
+
+    font-weight: 700;
+}
+
+
+/* =====================================================
+   LEGAL LINKS
+===================================================== */
+
+.footerLegal {
+    display: flex;
+    align-items: center;
+
+    gap: 18px;
+}
+
+
+.footerLegal a {
+    position: relative;
+
+    color: #64748b;
+
+    font-size: 10px;
+
+    text-decoration: none;
+
+    transition: color 0.3s ease;
+}
+
+
+.footerLegal a:hover {
+    color: #c7d2fe;
+}
+
+
+.footerLegal a:not(:last-child)::after {
+    content: "";
+
+    position: absolute;
+
+    right: -9px;
+    top: 50%;
+
+    width: 2px;
+    height: 2px;
+
+    border-radius: 50%;
+
+    background: #475569;
+}
+
+
+/* =====================================================
+   LOCATION / LANGUAGE
+===================================================== */
+
+.footerLocation {
+    justify-self: end;
+
+    height: 34px;
+
+    padding: 0 12px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+
+    border-radius: 9px;
+
+    border: 1px solid rgba(255, 255, 255, 0.07);
+
+    outline: none;
+
+    color: #94a3b8;
+
+    background: rgba(255, 255, 255, 0.035);
+
+    font-size: 10px;
+
+    cursor: pointer;
+
+    transition:
+        color 0.3s ease,
+        background 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+.footerLocation svg {
+    color: #818cf8;
+
+    font-size: 14px;
+}
+
+
+.footerLocation span {
+    color: #475569;
+}
+
+
+.footerLocation:hover {
+    color: #ffffff;
+
+    background: rgba(255, 255, 255, 0.065);
+
+    border-color: rgba(129, 140, 248, 0.18);
+}
+
+
+/* =====================================================
+   LARGE TABLET / SMALL LAPTOP
+===================================================== */
+
+@media (max-width: 1200px) {
+
+    .footerGrid {
+        grid-template-columns:
+            1.4fr
+            1fr
+            1fr
+            1fr;
+
+        gap: 32px;
+    }
+
+
+    .footerContact {
+        grid-column: 1 / -1;
+
+        display: grid;
+
+        grid-template-columns: repeat(3, 1fr);
+
+        gap: 15px 25px;
+    }
+
+
+    .footerContact h3 {
+        grid-column: 1 / -1;
+
+        margin-bottom: 5px;
+    }
+
+
+    .footerContactItem {
+        margin-bottom: 0;
+    }
+
+
+    .footerExtrasGrid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .footerMain {
+        padding: 45px 0 38px;
+    }
+
+
+    .footerGrid {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 35px 30px;
+    }
+
+
+    .footerBrand {
+        grid-column: 1 / -1;
+    }
+
+
+    .footerDescription {
+        max-width: 500px;
+    }
+
+
+    .footerContact {
+        grid-column: 1 / -1;
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .footerTrustGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .trustItem:nth-child(2)::after {
+        display: none;
+    }
+
+
+    .trustItem:nth-child(-n + 2) {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+
+    .footerApp {
+        align-items: flex-start;
+
+        flex-wrap: wrap;
+    }
+
+
+    .appButtons {
+        width: 100%;
+
+        margin-left: 60px;
+    }
+
+
+    .footerBottomInner {
+        grid-template-columns: 1fr;
+
+        justify-items: center;
+
+        text-align: center;
+
+        gap: 13px;
+    }
+
+
+    .footerLocation {
+        justify-self: center;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .footerMain {
+        padding: 38px 0 32px;
+    }
+
+
+    .footerGrid {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+
+    .footerBrand {
+        grid-column: auto;
+    }
+
+
+    .footerLogo {
+        font-size: 26px;
+    }
+
+
+    .footerColumn h3,
+    .footerContact h3 {
+        margin-bottom: 17px;
+    }
+
+
+    .footerContact {
+        grid-column: auto;
+
+        display: block;
+    }
+
+
+    .footerContactItem {
+        margin-bottom: 14px;
+    }
+
+
+    /* TRUST */
+
+    .footerTrustGrid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .trustItem {
+        min-height: 78px;
+
+        justify-content: flex-start;
+
+        padding: 15px 5px;
+    }
+
+
+    .trustItem:not(:last-child)::after {
+        display: none;
+    }
+
+
+    .trustItem:not(:last-child) {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.055);
+    }
+
+
+    /* APP + PAYMENT */
+
+    .footerExtras {
+        padding: 20px 0;
+    }
+
+
+    .footerApp {
+        padding: 17px;
+
+        display: grid;
+
+        grid-template-columns: auto 1fr;
+    }
+
+
+    .footerExtraIcon {
+        grid-row: 1;
+    }
+
+
+    .footerAppContent {
+        grid-column: 2;
+    }
+
+
+    .appButtons {
+        grid-column: 1 / -1;
+
+        width: 100%;
+
+        margin: 8px 0 0;
+
+        display: grid;
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .appButtons button {
+        width: 100%;
+
+        min-width: 0;
+    }
+
+
+    .footerPayment {
+        padding: 17px;
+    }
+
+
+    .paymentMethods {
+        display: grid;
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .paymentMethods span {
+        width: 100%;
+    }
+
+
+    /* BOTTOM */
+
+    .footerBottom {
+        padding: 20px 0;
+    }
+
+
+    .footerLegal {
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 10px 17px;
+    }
+
+}
+
+
+/* =====================================================
+   VERY SMALL MOBILE
+===================================================== */
+
+@media (max-width: 400px) {
+
+    .appButtons {
+        grid-template-columns: 1fr;
+    }
+
+
+    .paymentMethods {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .footerSocials a {
+        width: 36px;
+        height: 36px;
+    }
+
+}

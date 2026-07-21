@@ -6,7 +6,10 @@ import { FaShippingFast } from "react-icons/fa";
 import TrendingProducts from '../../components/TrendingProducts';
 import FlashSale from "../../components/FlashSale"
 import FeaturedProducts from "../../components/FeaturedProducts"
-import TechUpgradeBanner from "../../components/TechUpgradeBanner"
+import MemberBenefits from "../../components/MemberBenefits"
+import WhyShop from "../../components/WhyShop"
+import NewsletterOffer from "../../components/NewsletterOffer"
+import Footer from "../../components/Footer"
 
 const Home = () => {
   return (
@@ -40,7 +43,11 @@ const Home = () => {
     <TrendingProducts />
     <FlashSale />
     <FeaturedProducts />
-    <TechUpgradeBanner />
+    <MemberBenefits />
+    <WhyShop />
+    <NewsletterOffer />
+    <Footer />
+    
     </>
   )
 }

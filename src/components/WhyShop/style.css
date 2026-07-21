@@ -1,0 +1,598 @@
+/* =========================================
+   WHY SHOP WITH SHOPBAZAAR
+========================================= */
+
+.whyShopSection {
+    width: 100%;
+    padding: 55px 0 65px;
+
+    background: linear-gradient(
+        180deg,
+        #f5f8ff 0%,
+        #eef3fb 100%
+    );
+}
+
+
+/* =========================================
+   SECTION HEADING
+========================================= */
+
+.whyShopHeading {
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto 38px;
+}
+
+
+.whyShopBadge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 7px 16px;
+    margin-bottom: 12px;
+
+    border-radius: 50px;
+
+    background: linear-gradient(
+        135deg,
+        rgba(99, 102, 241, 0.12),
+        rgba(139, 92, 246, 0.12)
+    );
+
+    border: 1px solid rgba(99, 102, 241, 0.16);
+
+    color: #6366f1;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: 0.4px;
+}
+
+
+.whyShopHeading h2 {
+    margin: 0 0 10px;
+
+    color: #111827;
+
+    font-size: 34px;
+    font-weight: 800;
+
+    line-height: 1.2;
+
+    letter-spacing: -0.7px;
+}
+
+
+.whyShopHeading h2 span {
+    background: linear-gradient(
+        135deg,
+        #2563eb,
+        #7c3aed
+    );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    color: transparent;
+}
+
+
+.whyShopHeading p {
+    margin: 0;
+
+    color: #64748b;
+
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   CARDS GRID
+========================================= */
+
+.whyShopGrid {
+    display: grid;
+
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    gap: 22px;
+
+    width: 100%;
+}
+
+
+/* =========================================
+   COMMON CARD
+========================================= */
+
+.whyShopCard {
+    position: relative;
+
+    min-height: 260px;
+
+    padding: 28px 25px;
+
+    border-radius: 24px;
+
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+
+    border: 1px solid rgba(255, 255, 255, 0.65);
+
+    box-shadow:
+        0 12px 30px rgba(15, 23, 42, 0.07),
+        inset 0 1px 0 rgba(255, 255, 255, 0.60);
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease;
+}
+
+
+/* =========================================
+   DIFFERENT PREMIUM CARD COLORS
+========================================= */
+
+/* DELIVERY */
+
+.deliveryCard {
+    background: linear-gradient(
+        145deg,
+        #e8f2ff 0%,
+        #dbeafe 55%,
+        #e0e7ff 100%
+    );
+
+    border-color: rgba(59, 130, 246, 0.15);
+}
+
+
+/* PAYMENT */
+
+.paymentCard {
+    background: linear-gradient(
+        145deg,
+        #f1eaff 0%,
+        #ede9fe 55%,
+        #e9d5ff 100%
+    );
+
+    border-color: rgba(139, 92, 246, 0.15);
+}
+
+
+/* RETURN */
+
+.returnCard {
+    background: linear-gradient(
+        145deg,
+        #e4fbfb 0%,
+        #cffafe 55%,
+        #dbeafe 100%
+    );
+
+    border-color: rgba(6, 182, 212, 0.15);
+}
+
+
+/* SUPPORT */
+
+.supportCard {
+    background: linear-gradient(
+        145deg,
+        #e9edff 0%,
+        #e0e7ff 55%,
+        #ede9fe 100%
+    );
+
+    border-color: rgba(79, 70, 229, 0.15);
+}
+
+/* =========================================
+   ICON BOX
+========================================= */
+
+.whyShopIcon {
+    position: relative;
+    z-index: 5;
+
+    width: 58px;
+    height: 58px;
+
+    margin-bottom: 22px;
+
+    border-radius: 17px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(255, 255, 255, 0.52);
+
+    border: 1px solid rgba(255, 255, 255, 0.75);
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    box-shadow:
+        0 8px 20px rgba(15, 23, 42, 0.07),
+        inset 0 1px 0 rgba(255, 255, 255, 0.80);
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+
+.whyShopIcon svg {
+    font-size: 27px;
+}
+
+
+/* Individual Icon Colors */
+
+.deliveryCard .whyShopIcon {
+    color: #2563eb;
+}
+
+
+.paymentCard .whyShopIcon {
+    color: #7c3aed;
+}
+
+
+.returnCard .whyShopIcon {
+    color: #0891b2;
+}
+
+
+.supportCard .whyShopIcon {
+    color: #4f46e5;
+}
+
+
+/* =========================================
+   CARD CONTENT
+========================================= */
+
+.whyShopContent {
+    position: relative;
+    z-index: 5;
+}
+
+
+.whyShopContent h3 {
+    margin: 0 0 10px;
+
+    color: #172033;
+
+    font-size: 17px;
+    font-weight: 750;
+
+    line-height: 1.35;
+}
+
+
+.whyShopContent p {
+    margin: 0 0 17px;
+
+    color: #64748b;
+
+    font-size: 12.5px;
+    line-height: 1.65;
+}
+
+
+/* =========================================
+   LEARN MORE
+========================================= */
+
+.whyShopLearn {
+    display: inline-flex;
+    align-items: center;
+
+    gap: 7px;
+
+    color: #334155;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        gap 0.3s ease,
+        color 0.3s ease;
+}
+
+
+.whyShopLearn svg {
+    font-size: 14px;
+
+    transition: transform 0.3s ease;
+}
+
+
+/* Individual Learn More Colors */
+
+.deliveryCard .whyShopLearn {
+    color: #2563eb;
+}
+
+
+.paymentCard .whyShopLearn {
+    color: #7c3aed;
+}
+
+
+.returnCard .whyShopLearn {
+    color: #0891b2;
+}
+
+
+.supportCard .whyShopLearn {
+    color: #4f46e5;
+}
+
+/* =========================================
+   DECORATIVE GLOW
+========================================= */
+
+.cardGlow {
+    position: absolute;
+
+    width: 150px;
+    height: 150px;
+
+    border-radius: 50%;
+
+    right: -70px;
+    top: -70px;
+
+    filter: blur(5px);
+
+    opacity: 0.45;
+
+    pointer-events: none;
+
+    transition:
+        transform 0.5s ease,
+        opacity 0.5s ease;
+}
+
+
+.deliveryCard .cardGlow {
+    background: rgba(59, 130, 246, 0.22);
+}
+
+
+.paymentCard .cardGlow {
+    background: rgba(139, 92, 246, 0.22);
+}
+
+
+.returnCard .cardGlow {
+    background: rgba(6, 182, 212, 0.22);
+}
+
+
+.supportCard .cardGlow {
+    background: rgba(99, 102, 241, 0.22);
+}
+
+
+/* =========================================
+   SMALL DECORATIVE CIRCLE
+========================================= */
+
+.whyShopCard::after {
+    content: "";
+
+    position: absolute;
+
+    width: 85px;
+    height: 85px;
+
+    border-radius: 50%;
+
+    bottom: -45px;
+    left: -30px;
+
+    background: rgba(255, 255, 255, 0.28);
+
+    pointer-events: none;
+}
+
+
+/* =========================================
+   CARD HOVER
+========================================= */
+
+.whyShopCard:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 22px 45px rgba(15, 23, 42, 0.12),
+        inset 0 1px 0 rgba(255, 255, 255, 0.70);
+}
+
+
+.deliveryCard:hover {
+    border-color: rgba(37, 99, 235, 0.30);
+}
+
+
+.paymentCard:hover {
+    border-color: rgba(124, 58, 237, 0.30);
+}
+
+
+.returnCard:hover {
+    border-color: rgba(8, 145, 178, 0.30);
+}
+
+
+.supportCard:hover {
+    border-color: rgba(79, 70, 229, 0.30);
+}
+
+
+/* Icon Hover */
+
+.whyShopCard:hover .whyShopIcon {
+    transform: translateY(-3px) scale(1.06);
+
+    box-shadow:
+        0 12px 25px rgba(15, 23, 42, 0.11),
+        inset 0 1px 0 rgba(255, 255, 255, 0.85);
+}
+
+
+/* Glow Hover */
+
+.whyShopCard:hover .cardGlow {
+    transform: scale(1.25);
+
+    opacity: 0.65;
+}
+
+
+/* Learn More Hover */
+
+.whyShopCard:hover .whyShopLearn {
+    gap: 10px;
+}
+
+
+.whyShopCard:hover .whyShopLearn svg {
+    transform: translateX(3px);
+}
+
+
+/* =========================================
+   LAPTOP
+========================================= */
+
+@media (max-width: 1200px) {
+
+    .whyShopGrid {
+        gap: 17px;
+    }
+
+
+    .whyShopCard {
+        min-height: 250px;
+
+        padding: 25px 20px;
+    }
+
+
+    .whyShopContent h3 {
+        font-size: 16px;
+    }
+
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 992px) {
+
+    .whyShopSection {
+        padding: 45px 0 55px;
+    }
+
+
+    .whyShopGrid {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 20px;
+    }
+
+
+    .whyShopCard {
+        min-height: 235px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .whyShopSection {
+        padding: 38px 0 45px;
+    }
+
+
+    .whyShopHeading {
+        margin-bottom: 28px;
+
+        padding: 0 10px;
+    }
+
+
+    .whyShopHeading h2 {
+        font-size: 27px;
+    }
+
+
+    .whyShopHeading p {
+        font-size: 12.5px;
+    }
+
+
+    .whyShopGrid {
+        grid-template-columns: 1fr;
+
+        gap: 16px;
+    }
+
+
+    .whyShopCard {
+        min-height: auto;
+
+        padding: 24px;
+
+        border-radius: 20px;
+    }
+
+
+    .whyShopIcon {
+        width: 52px;
+        height: 52px;
+
+        margin-bottom: 17px;
+
+        border-radius: 15px;
+    }
+
+
+    .whyShopIcon svg {
+        font-size: 24px;
+    }
+
+
+    .whyShopContent h3 {
+        font-size: 17px;
+    }
+
+
+    .whyShopContent p {
+        font-size: 12px;
+
+        margin-bottom: 14px;
+    }
+
+}
